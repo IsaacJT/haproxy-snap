@@ -7,9 +7,6 @@ description: |
 base: core26
 grade: stable
 confinement: strict
-platforms:
-  amd64:
-  arm64:
 
 apps:
   haproxy:
