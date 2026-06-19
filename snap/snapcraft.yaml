@@ -3,6 +3,11 @@ adopt-info: haproxy
 summary: Fast and reliable load balancing reverse proxy
 description: |
   Fast and reliable load balancing reverse proxy
+issues: https://github.com/IsaacJT/haproxy-snap/issues
+source-code: https://github.com/IsaacJT/haproxy-snap
+website: https://www.haproxy.org/
+license: GPL-3.0-only
+title: HAProxy
 
 base: core26
 grade: stable
@@ -41,4 +46,3 @@ parts:
     plugin: dump
     source-type: local
     source: snap/local
-
