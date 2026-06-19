@@ -1,5 +1,5 @@
 name: haproxy-dtp
-version: '2.4.22'
+adopt-info: haproxy
 summary: Fast and reliable load balancing reverse proxy
 description: |
   Fast and reliable load balancing reverse proxy
@@ -29,6 +29,10 @@ parts:
     plugin: nil
     stage-packages:
       - haproxy
+    override-build: |
+      craftctl default
+      craftctl set version=$(dpkg-deb -f \
+        "${CRAFT_PART_BUILD}/../stage_packages/haproxy_"*.deb Version)
     override-prime: |
       craftctl default
       rm -f etc/haproxy/haproxy.cfg
