@@ -1,4 +1,4 @@
-name: haproxy-dtp
+name: itrue-haproxy
 adopt-info: haproxy
 summary: Fast and reliable load balancing reverse proxy
 description: |
